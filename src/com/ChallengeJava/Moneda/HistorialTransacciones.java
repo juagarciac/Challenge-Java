@@ -96,6 +96,7 @@ public class HistorialTransacciones {
         System.out.println("Historial transacciones");
         var abertura = HistorialTransacciones.numeroIntervalo();
         List<Moneda> lista = HistorialTransacciones.listaContieneRango();
+        System.out.println("Indice actual 1");
         for (Moneda elemento : lista){
             System.out.println("Valor original "+elemento.getValor()+" ["+elemento.getMoneda()+"]"+" Valor de transacción "+elemento.getValorCambio()+" ["+elemento.getCambio()+"]");
             System.out.println("fecha de transacción "+elemento.getTiempoTomado()+"\n");
@@ -106,7 +107,7 @@ public class HistorialTransacciones {
                 break;
             }
             System.out.println("Escoge en el siguiente rango de valores para ver mas transacciones");
-            System.out.println("              1 - "+ abertura + " salir del historial -1\n");
+            System.out.println("              1 - "+ abertura + "\nsalir del historial -1\n");
             int numero = lectura.nextInt();
             while(numero > abertura || numero<-1){
                 System.out.println("No puedes usar numeros mayores al limite del historial\n");
@@ -119,6 +120,7 @@ public class HistorialTransacciones {
             }
             System.out.println("Historial transacciones");
             lista = HistorialTransacciones.listaContieneRango(numero);
+            System.out.println("Indice actual "+numero+"\n");
             for (Moneda elemento : lista){
                 System.out.println("Valor original "+elemento.getValor()+" ["+elemento.getMoneda()+"]"+" Valor de transacción "+elemento.getValorCambio()+" ["+elemento.getCambio()+"]");
                 System.out.println("fecha de transacción "+elemento.getTiempoTomado()+"\n");
