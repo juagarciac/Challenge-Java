@@ -24,4 +24,6 @@ En esta imagen se ilustra el historial de transacciones realizados por el usuari
 
 Juan Pablo Garcia Carballo
 
-** (Maletín):** [Linkedin](www.linkedin.com/in/juan-pablo-garcia-095a62283)   [Github](https://github.com/juagarciac)  [Correo](mailto:juanpablogarciacarballo@gmail.com)
+Linkedin www.linkedin.com/in/juan-pablo-garcia-095a62283
+
+[Github](https://github.com/juagarciac)  [Correo](mailto:juanpablogarciacarballo@gmail.com)

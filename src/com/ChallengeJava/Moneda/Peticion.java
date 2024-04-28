@@ -9,6 +9,10 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+/*
+Se realiza la petición a la api, se usa objetos MonedaCambiada para tomar los valores generados en el json, y se toma el tiempo de transacción
+*/
+
 public class Peticion {
     private static final String api_key = "74408c402dd4cb65edaf3a64";
     private static final String direccionInicial = "https://v6.exchangerate-api.com/v6/";

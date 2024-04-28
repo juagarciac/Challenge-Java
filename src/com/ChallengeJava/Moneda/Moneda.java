@@ -3,6 +3,10 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.HashMap;
 
+/*
+Clase principal del programa, tiene las monedas y valores dados por el usuario y por la transacción
+*/
+
 public class Moneda {
     private double valor = (double) 0;
     private String moneda;
@@ -26,6 +30,10 @@ public class Moneda {
         this.moneda = moneda;
         this.cambio = cambio;
     }
+
+    /*
+metodo para crear monedas con los valores predeterminados dados por la api
+*/
 
     public static Moneda peticionMon(int moneda,int monedaCambio, double monto) {
         HashMap<Integer, String> monedaDisponibles = new HashMap<>();

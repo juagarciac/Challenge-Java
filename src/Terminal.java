@@ -5,7 +5,9 @@ import com.ChallengeJava.Moneda.Peticion;
 import java.io.IOException;
 import java.util.InputMismatchException;
 import java.util.Scanner;
-
+/*
+El flujo principal de print y entradas, estan los comentarios de terminal y se ejecutan la mayoria de los comandos en formato metodo
+*/
 public class Terminal {
     public static void ejecutar(){
         while (true) {

@@ -8,6 +8,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+/*
+Clase que se encarga de serializar en formato json el historial de operaciones realizadas con monedas, tambien tiene un metodo para los prints de terminal
+*/
+
 public class HistorialTransacciones {
     private static ArrayList<Moneda> historialTransaccion = new ArrayList<Moneda>();
     private static final String nombreArchivo = "Historial.json";
@@ -96,10 +100,9 @@ public class HistorialTransacciones {
         System.out.println("Historial transacciones");
         var abertura = HistorialTransacciones.numeroIntervalo();
         List<Moneda> lista = HistorialTransacciones.listaContieneRango();
-<<<<<<< HEAD
+
         System.out.println("Indice actual 1");
-=======
->>>>>>> 4bedc19d0724d993f3a7152da6d0db5a8559f5eb
+
         for (Moneda elemento : lista){
             System.out.println("Valor original "+elemento.getValor()+" ["+elemento.getMoneda()+"]"+" Valor de transacción "+elemento.getValorCambio()+" ["+elemento.getCambio()+"]");
             System.out.println("fecha de transacción "+elemento.getTiempoTomado()+"\n");
@@ -110,11 +113,11 @@ public class HistorialTransacciones {
                 break;
             }
             System.out.println("Escoge en el siguiente rango de valores para ver mas transacciones");
-<<<<<<< HEAD
+
             System.out.println("              1 - "+ abertura + "\nsalir del historial -1\n");
-=======
+
             System.out.println("              1 - "+ abertura + " salir del historial -1\n");
->>>>>>> 4bedc19d0724d993f3a7152da6d0db5a8559f5eb
+
             int numero = lectura.nextInt();
             while(numero > abertura || numero<-1){
                 System.out.println("No puedes usar numeros mayores al limite del historial\n");
@@ -127,10 +130,9 @@ public class HistorialTransacciones {
             }
             System.out.println("Historial transacciones");
             lista = HistorialTransacciones.listaContieneRango(numero);
-<<<<<<< HEAD
+
             System.out.println("Indice actual "+numero+"\n");
-=======
->>>>>>> 4bedc19d0724d993f3a7152da6d0db5a8559f5eb
+
             for (Moneda elemento : lista){
                 System.out.println("Valor original "+elemento.getValor()+" ["+elemento.getMoneda()+"]"+" Valor de transacción "+elemento.getValorCambio()+" ["+elemento.getCambio()+"]");
                 System.out.println("fecha de transacción "+elemento.getTiempoTomado()+"\n");
